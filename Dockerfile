@@ -2,7 +2,7 @@ From ubuntu
 
 RUN apt-get -y update
 RUN apt-get install git
-RUN git clone https://github.com/BhaveshBhagat/Decision_Tree_classifier.git
+COPY . /temp/file
 RUN apt-get install python3
 RUN pip3 install pandas
 RUN pip3 install numpy
